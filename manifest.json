@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "頁籤資訊顯示器",
+  "version": "1.0",
+  "description": "顯示所有開啟頁籤的資訊",
+  "permissions": [
+    "tabs",
+    "notifications",
+    "storage",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

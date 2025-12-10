@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>頁籤資訊</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="chart.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📑 頁籤管理器</h1>
+    <div class="header-actions">
+      <button class="header-btn" id="statsBtn">📊 統計</button>
+      <button class="header-btn" id="settingsBtn">⚙️ 設定</button>
+      <button class="header-btn download-btn" id="downloadBtn" title="下載頁籤清單">📥 下載</button>
+    </div>
+    <div class="search-stats-row">
+      <span id="tabCount" class="tab-count">載入中...</span>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="🔍 搜尋標題..." />
+        <button id="clearSearch" class="clear-button">✕</button>
+      </div>
+    </div>
+    <div class="sort-controls">
+      <label>排序方式：</label>
+      <button class="sort-button active" id="sortDefault">預設排序</button>
+      <button class="sort-button" id="sortTitle">標題排序</button>
+      <button class="sort-button" id="sortUrl">URL排序</button>
+      <button class="sort-button" id="sortGroup">合併群組</button>
+    </div>
+    
+    <!-- 主要頁籤列表 -->
+    <div id="tabList" class="tab-list">
+      <!-- 頁籤資訊將顯示在這裡 -->
+    </div>
+    
+    <!-- 統計面板 -->
+    <div id="statsPanel" class="side-panel" style="display: none;">
+      <h3>📊 分頁使用統計</h3>
+      <div class="stats-period-buttons">
+        <button class="period-btn active" data-period="7">近7日</button>
+        <button class="period-btn" data-period="30">近1個月</button>
+        <button class="period-btn" data-period="90">近3個月</button>
+        <button class="period-btn" data-period="180">近6個月</button>
+        <button class="period-btn" data-period="365">近1年</button>
+      </div>
+      <div class="chart-container">
+        <canvas id="statsChart"></canvas>
+      </div>
+      <div class="stats-summary">
+        <div class="summary-item">
+          <div class="summary-label">總開啟</div>
+          <div class="summary-value" id="totalOpened">0</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-label">總關閉</div>
+          <div class="summary-value" id="totalClosed">0</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-label">平均每日開啟</div>
+          <div class="summary-value" id="avgOpened">0</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-label">目前開啟</div>
+          <div class="summary-value current" id="currentTabs">0</div>
+        </div>
+      </div>
+      <button id="closeStatsBtn" class="close-panel-btn">關閉</button>
+    </div>
+    
+    <!-- 設定面板 -->
+    <div id="settingsPanel" class="side-panel" style="display: none;">
+      <h3>⚙️ 設定</h3>
+      
+      <!-- 資料管理 -->
+      <div class="setting-section">
+        <h4>📦 資料管理</h4>
+        <div class="data-management">
+          <button id="exportDataBtn" class="data-btn export-btn">📥 匯出資料</button>
+          <button id="importDataBtn" class="data-btn import-btn">📤 匯入資料</button>
+          <input type="file" id="importFileInput" accept=".json" style="display: none;">
+        </div>
+        <p class="setting-description">匯出統計資料和白名單設定為 JSON 檔案</p>
+      </div>
+      
+      <!-- 白名單設定 -->
+      <div class="setting-section">
+        <h4>🔕 重複網域提醒設定</h4>
+        <label>白名單（不提醒的網域）</label>
+        <p class="setting-description">這些網域不會觸發重複分頁提醒</p>
+        <div id="whitelistItems" class="whitelist-items"></div>
+        <div class="whitelist-input-group">
+          <input type="text" id="whitelistInput" placeholder="例如：google.com" />
+          <button id="addWhitelistBtn" class="add-btn">➕ 新增</button>
+        </div>
+      </div>
+      
+      <button id="closeSettingsBtn" class="close-panel-btn">關閉</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

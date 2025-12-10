@@ -1,0 +1,83 @@
+頁籤清單
+================================================================================
+總數：15 個頁籤
+匯出時間：2024/12/02 14:30:45
+================================================================================
+
+
+【群組 1】github.com（5 個頁籤）
+--------------------------------------------------------------------------------
+第 1 筆
+標題：GitHub - microsoft/vscode: Visual Studio Code
+網址：https://github.com/microsoft/vscode
+
+第 2 筆
+標題：GitHub - facebook/react: A declarative JavaScript library
+網址：https://github.com/facebook/react
+
+第 3 筆
+標題：Your Repositories - GitHub
+網址：https://github.com/dashboard
+
+第 4 筆
+標題：Pull Requests - GitHub
+網址：https://github.com/pulls
+
+第 5 筆
+標題：Issues - GitHub
+網址：https://github.com/issues
+
+
+【群組 2】youtube.com（4 個頁籤）
+--------------------------------------------------------------------------------
+第 1 筆
+標題：JavaScript Tutorial for Beginners - YouTube
+網址：https://www.youtube.com/watch?v=W6NZfCO5SIk
+
+第 2 筆
+標題：React Tutorial - YouTube
+網址：https://www.youtube.com/watch?v=Ke90Tje7VS0
+
+第 3 筆
+標題：訂閱內容 - YouTube
+網址：https://www.youtube.com/feed/subscriptions
+
+第 4 筆
+標題：YouTube Music
+網址：https://music.youtube.com/
+
+
+【群組 3】stackoverflow.com（3 個頁籤）
+--------------------------------------------------------------------------------
+第 1 筆
+標題：How to use async/await in JavaScript - Stack Overflow
+網址：https://stackoverflow.com/questions/14220321/
+
+第 2 筆
+標題：What is the difference between let and var - Stack Overflow
+網址：https://stackoverflow.com/questions/762011/
+
+第 3 筆
+標題：Stack Overflow - Where Developers Learn, Share, & Build Careers
+網址：https://stackoverflow.com/
+
+
+【群組 4】google.com（2 個頁籤）
+--------------------------------------------------------------------------------
+第 1 筆
+標題：Google 搜尋
+網址：https://www.google.com/
+
+第 2 筆
+標題：Gmail
+網址：https://mail.google.com/
+
+
+【群組 5】claude.ai（1 個頁籤）
+--------------------------------------------------------------------------------
+第 1 筆
+標題：Claude - Anthropic
+網址：https://claude.ai/
+
+================================================================================
+檔案結尾
